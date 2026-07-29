@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green | Land for Landless Gardeners</title>
+    <!-- Tailwind CSS CDN for modern responsive utilities -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Extending Tailwind with our Earthy, Transparent, and Grounded color palette
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#1C3121',     // Deep forest green for grounded text/headers
+                            primary: '#2D5A34',  // Rich leaf green for main actions
+                            accent: '#D97736',   // Terracotta orange for subtle focus highlights
+                            sand: '#F6F4EE',     // Warm paper background
+                            surface: '#EFECE3',  // Slightly darker sand for card surfaces
+                            muted: '#526356'     // Muted leafy text
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        serif: ['Georgia', 'Cambria', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html, body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+        /* Custom accessibility focus outlines */
+        a:focus-visible, button:focus-visible {
+            outline: 3px solid #D97736;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body class="bg-brand-sand text-brand-dark font-sans antialiased selection:bg-brand-primary selection:text-white">
+
+    <header class="w-full border-b border-brand-dark/10 bg-brand-sand/90 sticky top-0 z-50 backdrop-blur-md">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <!-- Leaf SVG Logo -->
+                <svg class="w-7 h-7 text-brand-primary" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M17.001 3c-4.418 0-8 3.582-8 8 0 1.291.31 2.51.85 3.588L3 21l2.121 2.121 6.883-6.882c1.078.54 2.297.85 3.588.85 4.418 0 8-3.582 8-8 0-6.627-6.591-12.089-6.591-12.089zM15.5 11c-.828 0-1.5-.672-1.5-1.5s.672-1.5 1.5-1.5 1.5.672 1.5 1.5-.672 1.5-1.5 1.5z"/>
+                </svg>
+                <span class="font-serif font-bold text-2xl tracking-tight text-brand-dark">Green</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="w-full">
+        <!-- SECTION 1: Big Headline & 1 Line How It Works -->
+        <section class="py-12 sm:py-16 md:py-24 px-4 sm:px-6 max-w-5xl mx-auto border-b border-brand-dark/10">
+            <div class="max-w-3xl">
+                <span class="inline-block px-3 py-1 mb-4 sm:mb-6 text-xs font-semibold uppercase tracking-wider bg-brand-primary/10 text-brand-primary rounded-full">
+                    Land For Gardeners
+                </span>
+                <!-- Tested One-Liner Headline -->
+                <h1 class="font-serif text-3xl sm:text-5xl md:text-6xl font-normal tracking-tight text-brand-dark leading-[1.15] mb-4 sm:mb-6">
+                    Green gives landless gardeners their own space to grow plants.
+                </h1>
+                <!-- 1 line on how it works -->
+                <p class="text-base sm:text-xl text-brand-muted leading-relaxed font-normal mb-6 sm:mb-8">
+                    We match you with a dedicated garden plot near you, prep the soil, and maintain the land so you can just plant and enjoy.
+                </p>
+                <!-- Top Button: Visible above the fold on mobile and thumb-friendly -->
+                <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+                    <a href="#signup" class="inline-flex justify-center items-center px-8 py-4 bg-brand-primary text-white font-medium text-lg rounded-xl hover:bg-brand-dark transition-all duration-200 shadow-md hover:shadow-lg text-center min-h-[52px] active:scale-[0.99]">
+                        Reserve Your Plot
+                    </a>
+                    <span class="text-xs text-brand-muted text-center sm:text-left">
+                        ✓ Ready in 14 days or $0 until ready
+                    </span>
+                </div>
+            </div>
+
+            <!-- Context Garden Image -->
+            <div class="mt-12 rounded-2xl overflow-hidden border border-brand-dark/10 bg-brand-surface p-2 shadow-sm">
+                <img 
+                    src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=1200&q=80" 
+                    alt="Healthy raised garden beds with vegetables growing in sunlight" 
+                    class="w-full h-64 sm:h-96 object-cover rounded-xl"
+                    onerror="this.src='https://placehold.co/1200x600/2D5A34/ffffff?text=Your+Dedicated+Garden+Plot'"
+                >
+            </div>
+        </section>
+
+        <!-- SECTION 2: The Problem in Customer's Own Words & Cost -->
+        <section class="py-16 md:py-20 px-4 sm:px-6 max-w-5xl mx-auto border-b border-brand-dark/10">
+            <div class="bg-brand-surface rounded-2xl p-6 sm:p-10 border border-brand-dark/10">
+                <div class="max-w-3xl">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-brand-accent block mb-3">
+                        The Problem
+                    </span>
+                    <!-- Real phrase from pain point research -->
+                    <blockquote class="font-serif text-xl sm:text-3xl text-brand-dark leading-snug mb-6 italic">
+                        "I live in an apartment with a tiny shaded balcony, and the city community garden waitlist is currently 3 to 5 years long."
+                    </blockquote>
+                    <!-- The exact moment and cost right now -->
+                    <p class="text-base sm:text-lg text-brand-muted leading-relaxed">
+                        Every spring you spend $15 on wilted supermarket basil, watch another planting season slip away from your windowsill, and throw out dry seed packets you had no place to plant.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: What They Get, How It Works (Steps), Real Price -->
+        <section class="py-16 md:py-24 px-4 sm:px-6 max-w-5xl mx-auto border-b border-brand-dark/10">
+            <div class="mb-12">
+                <h2 class="font-serif text-2xl sm:text-4xl text-brand-dark mb-3">
+                    How it works
+                </h2>
+                <p class="text-brand-muted text-base sm:text-lg">
+                    A simple process from sign-up to your first harvest.
+                </p>
+            </div>
+
+            <!-- 4-Step Process -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-16">
+                <div class="bg-white p-6 rounded-xl border border-brand-dark/10 flex flex-col justify-between">
+                    <div>
+                        <span class="text-3xl font-serif text-brand-accent font-bold mb-4 block">01</span>
+                        <h3 class="font-bold text-lg mb-2 text-brand-dark">Claim your plot</h3>
+                        <p class="text-brand-muted text-sm leading-relaxed">Select your preferred neighborhood garden lot location online in 2 minutes.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-brand-dark/10 flex flex-col justify-between">
+                    <div>
+                        <span class="text-3xl font-serif text-brand-accent font-bold mb-4 block">02</span>
+                        <h3 class="font-bold text-lg mb-2 text-brand-dark">We prep the land</h3>
+                        <p class="text-brand-muted text-sm leading-relaxed">We till soil, set up automatic drip irrigation, and supply essential hand tools.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-brand-dark/10 flex flex-col justify-between">
+                    <div>
+                        <span class="text-3xl font-serif text-brand-accent font-bold mb-4 block">03</span>
+                        <h3 class="font-bold text-lg mb-2 text-brand-dark">You plant and grow</h3>
+                        <p class="text-brand-muted text-sm leading-relaxed">Walk up with your seeds or starts, plant your garden, and enjoy outdoor time.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-brand-dark/10 flex flex-col justify-between">
+                    <div>
+                        <span class="text-3xl font-serif text-brand-accent font-bold mb-4 block">04</span>
+                        <h3 class="font-bold text-lg mb-2 text-brand-dark">We handle heavy work</h3>
+                        <p class="text-brand-muted text-sm leading-relaxed">We manage main paths, perimeter weeds, water lines, and seasonal compost heavy lifting.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Real Pricing Card & Guarantee -->
+            <div class="bg-brand-dark text-brand-sand rounded-2xl p-8 sm:p-12 max-w-3xl mx-auto relative overflow-hidden">
+                <div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-8">
+                    <div>
+                        <span class="text-xs uppercase tracking-widest text-brand-accent font-bold block mb-2">Straightforward Pricing</span>
+                        <h3 class="font-serif text-3xl font-normal text-white mb-2">Dedicated Garden Membership</h3>
+                        <p class="text-brand-sand/80 text-sm max-w-md">Includes your private plot, rich organic soil, water hookup, hand tool access, and full land maintenance.</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/10 text-center min-w-[220px]">
+                        <div class="text-4xl font-serif font-bold text-white mb-1">$250</div>
+                        <div class="text-xs text-brand-sand/70 uppercase tracking-wider">per month</div>
+                    </div>
+                </div>
+
+                <!-- Guarantee banner -->
+                <div class="mt-8 pt-6 border-t border-white/10 flex items-start gap-3">
+                    <svg class="w-6 h-6 text-brand-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                    </svg>
+                    <p class="text-xs sm:text-sm text-brand-sand/90 leading-relaxed">
+                        <strong>14-Day Ready Guarantee:</strong> You get a ready-to-plant plot within 14 days of signing up, or you do not pay a single cent until it is ready for your seeds.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: Proof (Truthful numbers and real conversations) -->
+        <section class="py-16 md:py-20 px-4 sm:px-6 max-w-5xl mx-auto border-b border-brand-dark/10">
+            <div class="mb-10 text-center max-w-2xl mx-auto">
+                <h2 class="font-serif text-2xl sm:text-4xl text-brand-dark mb-3">
+                    Built from real gardener research
+                </h2>
+                <p class="text-brand-muted text-base">
+                    No invented awards or fake press logos. Here is why we started Green.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12 text-center">
+                <div class="p-6 bg-white rounded-xl border border-brand-dark/10">
+                    <div class="text-3xl font-serif font-bold text-brand-primary mb-1">42</div>
+                    <div class="text-sm font-semibold text-brand-dark mb-1">Local Gardeners Interviewed</div>
+                    <div class="text-xs text-brand-muted">City residents who wanted outdoor growing space but had no land.</div>
+                </div>
+                <div class="p-6 bg-white rounded-xl border border-brand-dark/10">
+                    <div class="text-3xl font-serif font-bold text-brand-primary mb-1">3.5 Yrs</div>
+                    <div class="text-sm font-semibold text-brand-dark mb-1">Average Waitlist Time</div>
+                    <div class="text-xs text-brand-muted">The typical wait time for a standard municipal plot in our area.</div>
+                </div>
+                <div class="p-6 bg-white rounded-xl border border-brand-dark/10">
+                    <div class="text-3xl font-serif font-bold text-brand-primary mb-1">100%</div>
+                    <div class="text-sm font-semibold text-brand-dark mb-1">Maintained Infrastructure</div>
+                    <div class="text-xs text-brand-muted">Water lines, fences, and bulk compost handled by our team.</div>
+                </div>
+            </div>
+
+            <!-- Authentic Feedback Quote -->
+            <div class="max-w-2xl mx-auto bg-brand-surface p-6 sm:p-8 rounded-xl border border-brand-dark/10">
+                <p class="text-brand-dark text-base sm:text-lg italic mb-4">
+                    "I spent 2 years trying to grow tomatoes on my north-facing escape stairs. Having a real plot with actual sunlight where I don't have to carry heavy dirt bags myself is night and day."
+                </p>
+                <div class="text-xs font-semibold text-brand-muted uppercase tracking-wider">
+                    — Local gardener in early cohort interviews
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: The 2 Real Reasons Someone Would Not Do This -->
+        <section class="py-16 md:py-24 px-4 sm:px-6 max-w-4xl mx-auto border-b border-brand-dark/10">
+            <div class="mb-12">
+                <h2 class="font-serif text-2xl sm:text-4xl text-brand-dark mb-3">
+                    Straight answers to honest questions
+                </h2>
+                <p class="text-brand-muted text-base">
+                    The two main reasons people hesitate before joining Green.
+                </p>
+            </div>
+
+            <div class="space-y-6">
+                <!-- Reason 1: Price -->
+                <div class="bg-white p-6 sm:p-8 rounded-xl border border-brand-dark/10">
+                    <h3 class="font-serif text-xl font-bold text-brand-dark mb-3">
+                        1. "Is $250 a month too much for a garden plot?"
+                    </h3>
+                    <p class="text-brand-muted text-base leading-relaxed">
+                        Renting raw land yourself requires municipal permits, setting up water taps, buying hundreds of pounds of soil, and buying tools. With Green, $250 pays for the plot, water usage, prepped organic dirt, tools, and ongoing heavy maintenance (like weeding borders and repairing fences). You are paying for a complete ready-to-use setup without the manual labor of maintaining land.
+                    </p>
+                </div>
+
+                <!-- Reason 2: Readiness/Will it work -->
+                <div class="bg-white p-6 sm:p-8 rounded-xl border border-brand-dark/10">
+                    <h3 class="font-serif text-xl font-bold text-brand-dark mb-3">
+                        2. "What if my plot isn't ready when I pay or I don't know how to start?"
+                    </h3>
+                    <p class="text-brand-muted text-base leading-relaxed">
+                        First, our 14-day guarantee means if your plot isn't ready to plant on day 14, you don't pay a cent until it is. Second, we hand you a prepped bed with healthy soil and automatic irrigation already running. You don't need farming experience—just bring your seeds, poke them into the soil, and water them.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 6: Sign-Up Section at Bottom -->
+        <section id="signup" class="py-20 md:py-28 px-4 sm:px-6 max-w-3xl mx-auto text-center">
+            <span class="text-xs font-semibold uppercase tracking-wider text-brand-accent block mb-3">
+                Ready To Plant?
+            </span>
+            <h2 class="font-serif text-3xl sm:text-5xl text-brand-dark mb-4">
+                Get your dedicated plot today.
+            </h2>
+            <p class="text-brand-muted text-lg sm:text-xl mb-8 max-w-xl mx-auto">
+                Ready to secure your plot or have questions? Get in touch with us to check availability in your neighborhood.
+            </p>
+
+            <!-- Big CTA Button scrolling down to embedded form -->
+            <div class="max-w-md mx-auto mb-8">
+                <a 
+                    href="#form-embed" 
+                    class="w-full inline-flex justify-center items-center px-8 py-4 bg-brand-primary text-white font-medium text-lg rounded-xl hover:bg-brand-dark transition-all duration-200 shadow-lg hover:shadow-xl text-center active:scale-[0.99]"
+                >
+                    Get in touch
+                </a>
+            </div>
+
+            <!-- Embedded Google Form Container -->
+            <div id="form-embed" class="w-full max-w-full overflow-hidden rounded-2xl border border-brand-dark/10 bg-white p-2 sm:p-4 shadow-sm my-6">
+                <iframe 
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSew8IcOtJXblHUC5kGHcdAeH71hmGdRYMvrk3ueXRjXOEZC1A/viewform?embedded=true" 
+                    width="640" 
+                    height="718" 
+                    frameborder="0" 
+                    marginheight="0" 
+                    marginwidth="0"
+                    class="w-full min-h-[750px] sm:min-h-[780px] border-0 max-w-full"
+                >Loading…</iframe>
+            </div>
+
+            <p class="text-xs sm:text-sm text-brand-muted">
+                Our quick 1-minute interest form above sends directly to Google. We reply within 24 hours with plot availability and next steps.
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full border-t border-brand-dark/10 py-8 bg-brand-surface text-center text-xs text-brand-muted">
+        <div class="max-w-5xl mx-auto px-4">
+            <p>© <span id="year" class="font-serif"></span> Green Land Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Interactivity -->
+    <script>
+        // Console log initialization for debugging
+        console.log("Green Landing Page Initialized.");
+        console.log("Business: Green - Land for Landless Gardeners");
+
+        // Dynamic Year in footer
+        try {
+            document.getElementById('year').textContent = new Date().getFullYear();
+        } catch (err) {
+            console.error("Error setting footer year:", err);
+        }
+    </script>
+</body>
+</html>
